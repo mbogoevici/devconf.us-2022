@@ -32,7 +32,7 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as
         print(f"Total was {total}")
 
 
-    a#dded_values = add_one.expand(x = generate_numbers())
+    #added_values = add_one.expand(x = generate_numbers())
 
     pre_calculation >> post_calculation
 
