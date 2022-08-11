@@ -15,7 +15,7 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as
     
     @task
     def pre_calculation():
-        printf("Beginning risk calculation")
+        return generate_numbers()
 
     @task
     def add_one(x:int):
@@ -30,4 +30,6 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as
     def post_calculation(total):
         print(f"Total was {total}")
 
-    pre_calculation >> [sum_it(add_one.expand(x=generate_numbers())), post_calculation]
+    data = pre_calculation() 
+    total = sum_it(add_one.expand(x = data))
+    post_calculation(total)
