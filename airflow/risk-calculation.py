@@ -11,7 +11,7 @@ from airflow.example_dags.libs.helper import print_stuff
 with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 12, 12)) as dag:
 
     def generate_numbers():
-        return [*range(1,100)]
+        return [*range(1,10)]
     
     @task
     def pre_calculation():
