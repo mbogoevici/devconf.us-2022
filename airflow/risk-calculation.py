@@ -12,7 +12,7 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as
 
 
     def generate_numbers():
-        return range(1,100)
+        return [*range(1,100)]
     
     @task
     def pre_calculation():
