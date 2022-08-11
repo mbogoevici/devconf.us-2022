@@ -10,7 +10,6 @@ from airflow.example_dags.libs.helper import print_stuff
 
 with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as dag:
 
-
     def generate_numbers():
         return [*range(1,100)]
     
@@ -32,4 +31,4 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 3, 4)) as
         print(f"Total was {total}")
 
 
-    pre_calculation >> post_calculation(sum_it(add_one.expand(x=generate_numbers())))
+    pre_calculation() >> post_calculation(sum_it(add_one.expand(x=generate_numbers())))
