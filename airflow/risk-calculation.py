@@ -8,7 +8,7 @@ from airflow.configuration import conf
 from airflow.decorators import task
 from airflow.example_dags.libs.helper import print_stuff
 
-with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 12, 12)) as dag:
+with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 2, 12)) as dag:
 
     def generate_numbers():
         return [*range(1,10)]
