@@ -27,7 +27,7 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 2, 12), c
 
     @task
     def add_one(portfolio_data):
-        return portfolio_data['quantity'];
+        return portfolio_data['portfolio']['quantity'];
 
     @task
     def sum_it(values):
