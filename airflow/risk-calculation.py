@@ -22,7 +22,7 @@ with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 2, 12), c
     def pre_calculation():
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
-        data = json.load(file)
+        data = json.loads(file)
         return data
 
     @task
