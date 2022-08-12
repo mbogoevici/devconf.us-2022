@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "portfolio": [
+      {
+        "symbol": "GME",
+        "quantity": 100
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 200
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 50
+      }
+    ]
+  },
+    {
+    "id": 2,
+    "portfolio": [
+      {
+        "symbol": "TSLA",
+        "quantity": 100
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 100
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 100
+      }
+    ]
+  }
+
+]
