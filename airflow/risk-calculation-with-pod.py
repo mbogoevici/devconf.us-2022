@@ -21,11 +21,11 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         return [*range(1,10)]
     
     @task
-    def pre_calculation():
+    def extract_portfolios():
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
-        return data
+        return map(lambda p: "'PORTFOLIO_DATA': '{}'".format(p))
 
 
     calculate_var = KubernetesPodOperator.partial(
@@ -53,7 +53,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         get_logs=True,
         # log events in case of Pod failure
         log_events_on_failure=True,
-    ).expand(env_vars = [{'PORTFOLIO_DATA': '{"confidence": 0.99,"portfolio": [{"symbol": "GME", "quantity": 100}, {"symbol": "IBM", "quantity": 50}]}'}, {'PORTFOLIO_DATA': '{"confidence": 0.99,"portfolio": [{"symbol": "GME", "quantity": 100}, {"symbol": "IBM", "quantity": 100}]}'}]);
+    ).expand(env_vars = extract_portfolios());
 
     @task
     def aggregate(values):
