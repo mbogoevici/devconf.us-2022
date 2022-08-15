@@ -29,6 +29,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     @task
     def populate_cache():
         s3_hook = S3Hook(aws_conn_id='s3')
+        print(s3_hook.get_credentials())
         keys = s3_hook.list_keys(bucket_name='risk-calc', prefix='market-data');
         for key in keys:
             print(key)
