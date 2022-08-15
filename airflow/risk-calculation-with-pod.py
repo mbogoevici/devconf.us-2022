@@ -22,7 +22,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     @task
     def pre_calculation():
         s3_hook = S3Hook(aws_conn_id='s3')
-        file = s3_hook.read_key('portfolios.json', 'risk-calcß')
+        file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
         return data
 
@@ -62,5 +62,4 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     def post_calculation(total):
         print(f"Total was {total}")
 
-    data = pre_calculation()
-    calculate_var()
+    calculate_var
