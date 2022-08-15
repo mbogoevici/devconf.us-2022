@@ -16,16 +16,18 @@ from airflow.providers.http.hooks.http import HttpHook;
 
 with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
 
-    def generate_numbers():
-        return [*range(1,10)]
-
+    def remove_suffix(input_string, suffix):
+        if suffix and input_string.endswith(suffix):
+            return input_string[:-len(suffix)]
+        return input_string
 
     @task
     def populate_cache():
         s3_hook = S3Hook(aws_conn_id='s3')
         keys = s3_hook.list_keys(bucket_name='risk-calc', prefix='market-data');
         for key in keys:
-            HttpHook(http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(str(key).removesuffix('.json')),
+            print(key)
+            HttpHook(http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(remove_suffix(key, ".json")),
                  data=s3_hook.read_key(key, 'risk-calc/market-data'))
 
     
