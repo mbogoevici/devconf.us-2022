@@ -1,13 +1,13 @@
 [
   {
-    "id": 1,
+    "confidence": 0.99,
     "portfolio": [
       {
         "symbol": "GME",
         "quantity": 100
       },
       {
-        "symbol": "AMZN",
+        "symbol": "DAL",
         "quantity": 200
       },
       {
@@ -16,22 +16,21 @@
       }
     ]
   },
-    {
-    "id": 2,
+  {
+    "confidence": 0.99,
     "portfolio": [
       {
-        "symbol": "TSLA",
+        "symbol": "GME",
         "quantity": 100
       },
       {
-        "symbol": "AMZN",
-        "quantity": 100
+        "symbol": "DIS",
+        "quantity": 200
       },
       {
         "symbol": "IBM",
-        "quantity": 100
+        "quantity": 50
       }
     ]
   }
-
 ]
