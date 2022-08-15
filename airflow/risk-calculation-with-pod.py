@@ -14,7 +14,7 @@ from airflow.providers.amazon.aws.operators.s3_delete_objects import S3DeleteObj
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
 
 
-with DAG(dag_id="risk_calculation-with-opod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
+with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
 
     def generate_numbers():
         return [*range(1,10)]
@@ -22,7 +22,7 @@ with DAG(dag_id="risk_calculation-with-opod", start_date=pendulum.datetime(2022,
     @task
     def pre_calculation():
         s3_hook = S3Hook(aws_conn_id='s3')
-        file = s3_hook.read_key('portfolios.json', 'risk-calc/market-data')
+        file = s3_hook.read_key('portfolios.json', 'risk-calcß')
         data = json.loads(file)
         return data
 
@@ -31,12 +31,12 @@ with DAG(dag_id="risk_calculation-with-opod", start_date=pendulum.datetime(2022,
         # unique id of the task within the DAG
         task_id='calculate_var',
         # the Docker image to launch
-        image='fsi/var:v1',
+        image='fsi/var:v3',
         # launch the Pod on the same cluster as Airflow is running on
         in_cluster=True,
         # launch the Pod in the same namespace as Airflow is running in
         namespace='airflow',
-
+        do_xcom_push=True,
         # Pod configuration
         # name the Pod
         name='fsi-var',
@@ -63,4 +63,4 @@ with DAG(dag_id="risk_calculation-with-opod", start_date=pendulum.datetime(2022,
         print(f"Total was {total}")
 
     data = pre_calculation()
-    calculate_var
+    calculate_var >> post_calculation
