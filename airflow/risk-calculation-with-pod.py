@@ -21,14 +21,21 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
             return input_string[:-len(suffix)]
         return input_string
 
+    def remove_prefix(input_string, prefix):
+        if prefix and input_string.startswith(prefix):
+            return input_string[len(prefix):]
+        return input_string
+
     @task
     def populate_cache():
         s3_hook = S3Hook(aws_conn_id='s3')
         keys = s3_hook.list_keys(bucket_name='risk-calc', prefix='market-data');
         for key in keys:
             print(key)
-            HttpHook(http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(remove_suffix(key, ".json")),
-                 data=s3_hook.read_key(key, 'risk-calc/market-data'))
+            ticker = remove_prefix(remove_suffix(key, ".json"), 'market-data/')
+            print(ticker)
+            HttpHook(http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(ticker),
+                                                   data=s3_hook.read_key(key, bucket_name='risk-calc'))
 
     
     @task
