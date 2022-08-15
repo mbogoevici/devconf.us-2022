@@ -14,7 +14,7 @@ from airflow.providers.amazon.aws.operators.s3_delete_objects import S3DeleteObj
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
 
 
-with DAG(dag_id="risk_calculation", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
+with DAG(dag_id="risk_calculation-with-opod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
 
     def generate_numbers():
         return [*range(1,10)]
