@@ -59,9 +59,21 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     def aggregate(values):
         return values
 
+
+    def _print_results(**kwargs):
+        ti = kwargs['ti']
+        results = ti.xcom_pull(task_ids='calculate_var')
+        print(results)
+
+
+    display_results = PythonOperator(
+        task_id='display_results',
+        python_callable=_print_results,
+        provide_context=True,
+        dag=dag)
+
     def _print_results(total):
         print(f"Total was {total}")
 
-    display_results = PythonOperator(task_id='display_results', python_callable=_print_results)
 
-    calculate_var
+    calculate_var >> display_results
