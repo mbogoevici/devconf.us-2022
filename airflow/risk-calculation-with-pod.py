@@ -62,7 +62,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
 
     def _print_results(**kwargs):
         ti = kwargs['ti']
-        results = ti.xcom_pull(key='return_value', task_ids='calculate_var')
+        results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
         print(results)
 
 
