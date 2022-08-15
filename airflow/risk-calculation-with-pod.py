@@ -9,16 +9,25 @@ from airflow.configuration import conf
 from airflow.decorators import task
 from airflow.example_dags.libs.helper import print_stuff
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
-from airflow.providers.amazon.aws.operators.s3_copy_object import S3CopyObjectOperator
-from airflow.providers.amazon.aws.operators.s3_delete_objects import S3DeleteObjectsOperator
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
 from airflow.operators.python import PythonOperator
+from airflow.providers.http.hooks.http import HttpHook;
 
 
 with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
 
     def generate_numbers():
         return [*range(1,10)]
+
+
+    @task
+    def populate_cache():
+        s3_hook = S3Hook(aws_conn_id='s3')
+        keys = s3_hook.list_keys(bucket_name='risk-calc', prefix='market-data');
+        for key in keys:
+            HttpHook(http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(str(key).removesuffix('.json')),
+                 data=s3_hook.read_key(key, 'risk-calc/market-data'))
+
     
     @task
     def extract_portfolios():
@@ -76,4 +85,4 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         print(f"Total was {total}")
 
 
-    calculate_var >> display_results
+    populate_cache() >> calculate_var >> display_results
