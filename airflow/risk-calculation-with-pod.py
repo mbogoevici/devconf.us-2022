@@ -63,4 +63,4 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         print(f"Total was {total}")
 
     data = pre_calculation()
-    calculate_var >> post_calculation
+    calculate_var()
