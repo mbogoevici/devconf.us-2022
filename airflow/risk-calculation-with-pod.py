@@ -12,6 +12,7 @@ from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.amazon.aws.operators.s3_copy_object import S3CopyObjectOperator
 from airflow.providers.amazon.aws.operators.s3_delete_objects import S3DeleteObjectsOperator
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
+from airflow.operators.python import PythonOperator
 
 
 with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup = False) as dag:
@@ -58,10 +59,9 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     def aggregate(values):
         return values
 
-    @task
-    def post_calculation(total):
+    def _print_results(total):
         print(f"Total was {total}")
 
-    results = calculate_var()
-    print(results)
-    post_calculation(results)
+    display_results = PythonOperator(task_id='display_results', python_callable=_print_results)
+
+    calculate_var >> display_results
