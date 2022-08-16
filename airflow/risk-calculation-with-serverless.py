@@ -52,7 +52,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
         print(data)
-        return list(map(lambda d: "{}".format(json.dumps(p))));
+        return list(map(lambda d: "{}".format(json.dumps(p)), data));
 
     calculate_var = SimpleHttpOperator.partial(
         task_id = 'calculate_var',
