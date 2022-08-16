@@ -60,7 +60,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
         headers = { 'Content-type': "application/json"},
         http_conn_id='risk-calc-service',
         retries=10,
-        default_retry_delay = 1
+        retry_delay = 1
     ).expand(data=read_portfolios());
 
     @task
