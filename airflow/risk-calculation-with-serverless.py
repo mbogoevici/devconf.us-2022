@@ -55,6 +55,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
 
     calculate_var = SimpleHttpOperator.partial(
         task_id = 'calculate_var',
+        endpoint = '/value-at-risk',
         http_conn_id='risk-calc-service'
     ).expand(data=read_portfolios());
 
