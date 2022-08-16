@@ -54,7 +54,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         # unique id of the task within the DAG
         task_id='calculate_var',
         # the Docker image to launch
-        image='risk-calc:latest',
+        image='image-registry.openshift-image-registry.svc:5000/airflow/risk-calc:latest',
         # launch the Pod on the same cluster as Airflow is running on
         in_cluster=True,
         # launch the Pod in the same namespace as Airflow is running in
