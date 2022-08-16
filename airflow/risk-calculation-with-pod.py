@@ -13,6 +13,7 @@ from airflow.example_dags.libs.helper import print_stuff
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
 from airflow.operators.python import PythonOperator
+from airflow.providers.cncf.kubernetes.utils.xcom_sidecar import PodDefaults
 from airflow.providers.http.hooks.http import HttpHook;
 
 
@@ -51,6 +52,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         data = json.loads(file)
         return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
 
+    PodDefaults.SIDECAR_CONTAINER_NAME = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
 
     calculate_var = KubernetesPodOperator.partial(
         # unique id of the task within the DAG
