@@ -76,8 +76,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         # get log stdout of the container as task logs
         get_logs=True,
         # log events in case of Pod failure
-        log_events_on_failure=True,
-        task_concurrency=10
+        log_events_on_failure=True
     ).expand(env_vars=extract_portfolios());
 
     @task
