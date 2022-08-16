@@ -47,7 +47,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
 
     
     @task
-    def extract_portfolios():
+    def read_portfolios():
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
@@ -56,7 +56,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
     calculate_var = SimpleHttpOperator.partial(
         task_id = 'calculate_var',
         http_conn_id='risk-calc-service'
-    ).expand(env_vars=extract_portfolios());
+    ).expand(data=read_portfolios());
 
     @task
     def aggregate(values):
