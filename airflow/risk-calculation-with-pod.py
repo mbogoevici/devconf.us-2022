@@ -52,7 +52,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
 
 
-    calculate_var = KubernetesPodOperator(task_concurrency = 10).partial(
+    calculate_var = KubernetesPodOperator.partial(
         # unique id of the task within the DAG
         task_id='calculate_var',
         # the Docker image to launch
@@ -77,6 +77,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         get_logs=True,
         # log events in case of Pod failure
         log_events_on_failure=True,
+        task_concurrency=10
     ).expand(env_vars=extract_portfolios());
 
     @task
