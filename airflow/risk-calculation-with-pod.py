@@ -83,18 +83,17 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     def aggregate(values):
         return values
 
-
     def _write_results_to_S3(**kwargs):
         ti = kwargs['ti']
         results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
         s3_hook = S3Hook(aws_conn_id='s3')
         s3_hook.load_string(json.dumps(json.loads(results), indent=2), bucket_name= 'risk-calc',
-                            key="results/value-at-riskpython-{}.json".format(str(datetime.today()).split()[0]) )
+                            key="results/value-at-risk-{}.json".format(str(datetime.today()).split()[0]) )
 
 
     publish_results = PythonOperator(
-        task_id='display_results',
-        python_callable=_write_results_to_S3(),
+        task_id='publish_results',
+        python_callable=_write_results_to_S3,
         provide_context=True,
         dag=dag)
 
