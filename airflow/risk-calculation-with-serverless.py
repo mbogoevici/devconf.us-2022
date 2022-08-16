@@ -71,7 +71,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
         results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
         s3_hook = S3Hook(aws_conn_id='s3')
         s3_hook.load_string(json.dumps(results, indent=2), bucket_name= 'risk-calc',
-                            key="results/value-at-risk-{}.json".format(str(datetime.utcnow()).split()[0]) )
+                            key="results/value-at-risk-{}.json".format(str(datetime.utcnow()).split()[0]))
 
 
     publish_results = PythonOperator(
