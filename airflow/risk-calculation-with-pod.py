@@ -77,7 +77,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         # log events in case of Pod failure
         log_events_on_failure=True,
         # do not spawn more than 10 containers at a time
-        task_conccurency = 10
+        task_concurency = 10
     ).expand(env_vars=extract_portfolios());
 
     @task
