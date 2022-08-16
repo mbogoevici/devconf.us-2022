@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+from builtins import int
 
 import pendulum
 
@@ -75,6 +76,8 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         get_logs=True,
         # log events in case of Pod failure
         log_events_on_failure=True,
+        # do not spawn more than 10 containers at a time
+        task_conccurency = 10
     ).expand(env_vars=extract_portfolios());
 
     @task
@@ -82,20 +85,18 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         return values
 
 
-    def _print_results(**kwargs):
+    def _write_results_to_S3(**kwargs):
         ti = kwargs['ti']
         results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
-        print(results)
+        s3_hook = S3Hook(aws_conn_id='s3')
+        s3_hook.load_string(json.dumps(json.loads(results), indent=2))
 
 
-    display_results = PythonOperator(
+    publish_results = PythonOperator(
         task_id='display_results',
-        python_callable=_print_results,
+        python_callable=_write_results_to_S3(),
         provide_context=True,
         dag=dag)
 
-    def _print_results(total):
-        print(f"Total was {total}")
 
-
-    populate_cache() >> calculate_var >> display_results
+    populate_cache() >> calculate_var >> publish_results
