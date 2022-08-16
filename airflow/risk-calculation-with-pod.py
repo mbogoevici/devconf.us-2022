@@ -2,6 +2,7 @@ import json
 import logging
 import os
 from builtins import int
+from datetime import datetime
 
 import pendulum
 
@@ -87,7 +88,8 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         ti = kwargs['ti']
         results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
         s3_hook = S3Hook(aws_conn_id='s3')
-        s3_hook.load_string(json.dumps(json.loads(results), indent=2))
+        s3_hook.load_string(json.dumps(json.loads(results), indent=2), bucket_name= 'risk-calc',
+                            key="results/value-at-riskpython-{}.json".format(str(datetime.today()).split()[0]) )
 
 
     publish_results = PythonOperator(
