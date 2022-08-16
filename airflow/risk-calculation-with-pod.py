@@ -52,7 +52,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         data = json.loads(file)
         return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
 
-    PodDefaults.SIDECAR_CONTAINER.name = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
+    PodDefaults.SIDECAR_CONTAINER.image = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
     calculate_var = KubernetesPodOperator.partial(
         # unique id of the task within the DAG
         task_id='calculate_var',
