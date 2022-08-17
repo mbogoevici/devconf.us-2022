@@ -52,7 +52,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         data = json.loads(file)
         chunks = []
         n = 10
-        for i in range (0, n):
+        for i in range (0, 20):
             chunks.append([])
         for index, item in enumerate(data):
             chunks[index % n].append(data)
