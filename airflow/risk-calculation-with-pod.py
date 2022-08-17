@@ -56,7 +56,6 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
             chunks.append([])
         for index, item in enumerate(data):
             chunks[index % n].append(data)
-        chunks = list(partition(data, 10, order='correlationID'))
         chunk_data = []
         for chunk in chunks:
             chunk_data.append((map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(chunk))}, data)))
