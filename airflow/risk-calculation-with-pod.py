@@ -59,7 +59,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         chunk_data = []
         for chunk in chunks:
             chunk_data.append((map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(chunk))}, data)))
-        return chunks
+        return chunk_data
 
     PodDefaults.SIDECAR_CONTAINER.image = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
     calculate_var = KubernetesPodOperator.partial(
