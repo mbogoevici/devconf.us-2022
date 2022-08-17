@@ -7,15 +7,15 @@
     "portfolio": [
       {
         "symbol": "DAL",
-        "quantity": 163
+        "quantity": 124
       },
       {
-        "symbol": "GME",
-        "quantity": 140
+        "symbol": "AMZN",
+        "quantity": 189
       },
       {
-        "symbol": "GE",
-        "quantity": 145
+        "symbol": "IBM",
+        "quantity": 189
       }
     ]
   },
@@ -26,16 +26,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 185
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 180
+        "symbol": "DIS",
+        "quantity": 114
       },
       {
         "symbol": "GE",
-        "quantity": 187
+        "quantity": 160
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 140
       }
     ]
   },
@@ -47,15 +47,15 @@
     "portfolio": [
       {
         "symbol": "DIS",
-        "quantity": 182
+        "quantity": 175
       },
       {
-        "symbol": "AMZN",
-        "quantity": 190
+        "symbol": "GE",
+        "quantity": 119
       },
       {
-        "symbol": "IBM",
-        "quantity": 191
+        "symbol": "GOOG",
+        "quantity": 177
       }
     ]
   },
@@ -66,16 +66,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 130
-      },
-      {
         "symbol": "GE",
-        "quantity": 180
+        "quantity": 102
       },
       {
-        "symbol": "AMZN",
-        "quantity": 100
+        "symbol": "DAL",
+        "quantity": 193
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 172
       }
     ]
   },
@@ -86,16 +86,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 147
-      },
-      {
-        "symbol": "GME",
-        "quantity": 169
-      },
-      {
         "symbol": "DIS",
-        "quantity": 164
+        "quantity": 188
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 187
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 142
       }
     ]
   },
@@ -106,16 +106,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 133
-      },
-      {
-        "symbol": "GE",
-        "quantity": 115
-      },
-      {
         "symbol": "DAL",
-        "quantity": 161
+        "quantity": 180
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 187
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 104
       }
     ]
   },
@@ -126,16 +126,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 169
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 182
-      },
-      {
         "symbol": "DIS",
-        "quantity": 172
+        "quantity": 131
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 163
+      },
+      {
+        "symbol": "GE",
+        "quantity": 178
       }
     ]
   },
@@ -146,16 +146,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 187
-      },
-      {
-        "symbol": "GE",
-        "quantity": 189
+        "symbol": "DAL",
+        "quantity": 191
       },
       {
         "symbol": "AMZN",
-        "quantity": 166
+        "quantity": 107
+      },
+      {
+        "symbol": "GME",
+        "quantity": 147
       }
     ]
   },
@@ -166,16 +166,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 119
-      },
-      {
         "symbol": "GOOG",
-        "quantity": 162
+        "quantity": 124
       },
       {
-        "symbol": "GE",
-        "quantity": 181
+        "symbol": "DAL",
+        "quantity": 128
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 126
       }
     ]
   },
@@ -186,16 +186,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "DAL",
+        "quantity": 144
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 118
+      },
+      {
         "symbol": "GOOG",
-        "quantity": 104
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 148
-      },
-      {
-        "symbol": "GE",
-        "quantity": 141
+        "quantity": 166
       }
     ]
   },
@@ -206,16 +206,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 122
+        "symbol": "DAL",
+        "quantity": 141
       },
       {
-        "symbol": "GE",
-        "quantity": 177
+        "symbol": "GME",
+        "quantity": 193
       },
       {
-        "symbol": "DIS",
-        "quantity": 152
+        "symbol": "AMZN",
+        "quantity": 166
       }
     ]
   },
@@ -226,16 +226,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "GME",
+        "quantity": 190
+      },
+      {
         "symbol": "GE",
-        "quantity": 145
+        "quantity": 155
       },
       {
-        "symbol": "GOOG",
-        "quantity": 112
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 174
+        "symbol": "DIS",
+        "quantity": 116
       }
     ]
   },
@@ -246,16 +246,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 102
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 149
+        "symbol": "DIS",
+        "quantity": 179
       },
       {
         "symbol": "GME",
-        "quantity": 137
+        "quantity": 109
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 191
       }
     ]
   },
@@ -266,16 +266,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 122
+        "symbol": "DAL",
+        "quantity": 195
       },
       {
-        "symbol": "GE",
-        "quantity": 112
+        "symbol": "AMZN",
+        "quantity": 166
       },
       {
         "symbol": "DIS",
-        "quantity": 171
+        "quantity": 155
       }
     ]
   },
@@ -286,16 +286,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 134
+        "symbol": "GE",
+        "quantity": 108
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 179
       },
       {
         "symbol": "GME",
-        "quantity": 136
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 152
+        "quantity": 167
       }
     ]
   },
@@ -306,16 +306,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 194
+        "symbol": "AMZN",
+        "quantity": 151
+      },
+      {
+        "symbol": "GE",
+        "quantity": 180
       },
       {
         "symbol": "IBM",
-        "quantity": 191
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 180
+        "quantity": 187
       }
     ]
   },
@@ -327,15 +327,15 @@
     "portfolio": [
       {
         "symbol": "AMZN",
-        "quantity": 134
+        "quantity": 103
       },
       {
         "symbol": "DAL",
-        "quantity": 127
+        "quantity": 159
       },
       {
-        "symbol": "GOOG",
-        "quantity": 123
+        "symbol": "IBM",
+        "quantity": 153
       }
     ]
   },
@@ -346,16 +346,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 110
+        "symbol": "GME",
+        "quantity": 112
       },
       {
-        "symbol": "GOOG",
-        "quantity": 129
+        "symbol": "GE",
+        "quantity": 187
       },
       {
-        "symbol": "IBM",
-        "quantity": 182
+        "symbol": "DIS",
+        "quantity": 180
       }
     ]
   },
@@ -366,16 +366,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 156
-      },
-      {
         "symbol": "IBM",
-        "quantity": 165
+        "quantity": 152
       },
       {
-        "symbol": "GME",
-        "quantity": 141
+        "symbol": "AMZN",
+        "quantity": 143
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 122
       }
     ]
   },
@@ -386,16 +386,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 137
-      },
-      {
         "symbol": "DIS",
-        "quantity": 139
+        "quantity": 141
       },
       {
-        "symbol": "DAL",
-        "quantity": 137
+        "symbol": "GME",
+        "quantity": 184
+      },
+      {
+        "symbol": "GE",
+        "quantity": 126
       }
     ]
   },
@@ -406,16 +406,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "GME",
+        "quantity": 163
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 141
+      },
+      {
         "symbol": "GE",
-        "quantity": 142
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 102
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 168
+        "quantity": 191
       }
     ]
   },
@@ -426,16 +426,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 181
-      },
-      {
         "symbol": "GME",
-        "quantity": 166
+        "quantity": 122
       },
       {
-        "symbol": "GOOG",
-        "quantity": 134
+        "symbol": "IBM",
+        "quantity": 179
+      },
+      {
+        "symbol": "DIS",
+        "quantity": 172
       }
     ]
   },
@@ -446,16 +446,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 147
+        "symbol": "GME",
+        "quantity": 175
       },
       {
-        "symbol": "GME",
-        "quantity": 118
+        "symbol": "GE",
+        "quantity": 189
       },
       {
         "symbol": "GOOG",
-        "quantity": 193
+        "quantity": 155
       }
     ]
   },
@@ -466,16 +466,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 107
-      },
-      {
         "symbol": "GOOG",
-        "quantity": 172
+        "quantity": 173
       },
       {
         "symbol": "IBM",
-        "quantity": 164
+        "quantity": 194
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 130
       }
     ]
   },
@@ -487,15 +487,15 @@
     "portfolio": [
       {
         "symbol": "IBM",
-        "quantity": 134
+        "quantity": 109
       },
       {
-        "symbol": "GE",
-        "quantity": 188
+        "symbol": "AMZN",
+        "quantity": 129
       },
       {
-        "symbol": "GME",
-        "quantity": 188
+        "symbol": "DAL",
+        "quantity": 105
       }
     ]
   },
@@ -507,15 +507,15 @@
     "portfolio": [
       {
         "symbol": "IBM",
-        "quantity": 186
+        "quantity": 180
       },
       {
-        "symbol": "GE",
-        "quantity": 190
+        "symbol": "AMZN",
+        "quantity": 141
       },
       {
         "symbol": "DIS",
-        "quantity": 186
+        "quantity": 162
       }
     ]
   },
@@ -526,16 +526,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 108
-      },
-      {
         "symbol": "GOOG",
-        "quantity": 126
+        "quantity": 181
       },
       {
-        "symbol": "DIS",
-        "quantity": 100
+        "symbol": "AMZN",
+        "quantity": 148
+      },
+      {
+        "symbol": "GME",
+        "quantity": 198
       }
     ]
   },
@@ -546,16 +546,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 122
+        "symbol": "GE",
+        "quantity": 175
       },
       {
-        "symbol": "DIS",
-        "quantity": 187
+        "symbol": "DAL",
+        "quantity": 184
       },
       {
         "symbol": "GOOG",
-        "quantity": 115
+        "quantity": 132
       }
     ]
   },
@@ -566,16 +566,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
+        "symbol": "IBM",
+        "quantity": 148
+      },
+      {
+        "symbol": "AMZN",
         "quantity": 109
       },
       {
-        "symbol": "DIS",
-        "quantity": 176
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 186
+        "symbol": "GME",
+        "quantity": 139
       }
     ]
   },
@@ -586,16 +586,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 152
-      },
-      {
         "symbol": "GOOG",
-        "quantity": 120
+        "quantity": 187
       },
       {
-        "symbol": "AMZN",
-        "quantity": 113
+        "symbol": "GE",
+        "quantity": 164
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 148
       }
     ]
   },
@@ -606,16 +606,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 131
-      },
-      {
         "symbol": "AMZN",
-        "quantity": 150
+        "quantity": 196
       },
       {
-        "symbol": "DAL",
-        "quantity": 187
+        "symbol": "GME",
+        "quantity": 125
+      },
+      {
+        "symbol": "GE",
+        "quantity": 199
       }
     ]
   },
@@ -627,15 +627,15 @@
     "portfolio": [
       {
         "symbol": "GOOG",
-        "quantity": 147
+        "quantity": 109
       },
       {
         "symbol": "GE",
-        "quantity": 120
+        "quantity": 134
       },
       {
-        "symbol": "IBM",
-        "quantity": 109
+        "symbol": "AMZN",
+        "quantity": 170
       }
     ]
   },
@@ -647,15 +647,15 @@
     "portfolio": [
       {
         "symbol": "IBM",
-        "quantity": 187
+        "quantity": 139
+      },
+      {
+        "symbol": "GE",
+        "quantity": 125
       },
       {
         "symbol": "DIS",
-        "quantity": 168
-      },
-      {
-        "symbol": "GME",
-        "quantity": 138
+        "quantity": 125
       }
     ]
   },
@@ -666,16 +666,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 199
+        "symbol": "DAL",
+        "quantity": 170
       },
       {
-        "symbol": "GME",
-        "quantity": 117
+        "symbol": "AMZN",
+        "quantity": 141
       },
       {
-        "symbol": "GE",
-        "quantity": 175
+        "symbol": "GOOG",
+        "quantity": 146
       }
     ]
   },
@@ -686,16 +686,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "DIS",
+        "quantity": 161
+      },
+      {
         "symbol": "GOOG",
-        "quantity": 129
+        "quantity": 126
       },
       {
         "symbol": "IBM",
-        "quantity": 112
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 169
+        "quantity": 113
       }
     ]
   },
@@ -706,16 +706,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 157
+        "symbol": "GE",
+        "quantity": 132
       },
       {
         "symbol": "IBM",
-        "quantity": 157
+        "quantity": 166
       },
       {
         "symbol": "DIS",
-        "quantity": 174
+        "quantity": 149
       }
     ]
   },
@@ -726,16 +726,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 118
-      },
-      {
         "symbol": "AMZN",
-        "quantity": 132
+        "quantity": 170
       },
       {
-        "symbol": "GOOG",
-        "quantity": 122
+        "symbol": "DAL",
+        "quantity": 111
+      },
+      {
+        "symbol": "GE",
+        "quantity": 153
       }
     ]
   },
@@ -746,16 +746,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 169
-      },
-      {
         "symbol": "IBM",
-        "quantity": 198
+        "quantity": 153
       },
       {
-        "symbol": "GOOG",
-        "quantity": 162
+        "symbol": "DIS",
+        "quantity": 153
+      },
+      {
+        "symbol": "GME",
+        "quantity": 152
       }
     ]
   },
@@ -766,16 +766,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 190
+        "symbol": "DAL",
+        "quantity": 180
       },
       {
         "symbol": "GE",
-        "quantity": 188
+        "quantity": 145
       },
       {
-        "symbol": "DIS",
-        "quantity": 185
+        "symbol": "GME",
+        "quantity": 125
       }
     ]
   },
@@ -786,16 +786,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 151
+        "symbol": "IBM",
+        "quantity": 132
       },
       {
         "symbol": "GOOG",
-        "quantity": 126
+        "quantity": 151
       },
       {
-        "symbol": "DIS",
-        "quantity": 140
+        "symbol": "GE",
+        "quantity": 173
       }
     ]
   },
@@ -806,16 +806,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "GOOG",
+        "quantity": 157
+      },
+      {
         "symbol": "GE",
-        "quantity": 183
+        "quantity": 193
       },
       {
-        "symbol": "AMZN",
-        "quantity": 146
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 151
+        "symbol": "GME",
+        "quantity": 154
       }
     ]
   },
@@ -826,16 +826,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "AMZN",
+        "quantity": 175
+      },
+      {
         "symbol": "GME",
-        "quantity": 189
+        "quantity": 177
       },
       {
-        "symbol": "GE",
-        "quantity": 124
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 197
+        "symbol": "GOOG",
+        "quantity": 119
       }
     ]
   },
@@ -846,16 +846,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 133
+        "symbol": "IBM",
+        "quantity": 179
       },
       {
-        "symbol": "AMZN",
+        "symbol": "DIS",
         "quantity": 128
       },
       {
-        "symbol": "GME",
-        "quantity": 121
+        "symbol": "GE",
+        "quantity": 168
       }
     ]
   },
@@ -866,16 +866,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 165
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 119
+        "symbol": "DAL",
+        "quantity": 117
       },
       {
         "symbol": "GME",
-        "quantity": 103
+        "quantity": 111
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 183
       }
     ]
   },
@@ -886,16 +886,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "GOOG",
+        "quantity": 111
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 144
+      },
+      {
         "symbol": "DAL",
-        "quantity": 193
-      },
-      {
-        "symbol": "GME",
-        "quantity": 153
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 159
+        "quantity": 160
       }
     ]
   },
@@ -906,16 +906,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 158
+        "symbol": "DAL",
+        "quantity": 100
       },
       {
         "symbol": "DIS",
-        "quantity": 159
+        "quantity": 124
       },
       {
-        "symbol": "IBM",
-        "quantity": 149
+        "symbol": "GME",
+        "quantity": 137
       }
     ]
   },
@@ -926,16 +926,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 172
+        "symbol": "GE",
+        "quantity": 122
       },
       {
         "symbol": "DAL",
-        "quantity": 140
+        "quantity": 115
       },
       {
-        "symbol": "IBM",
-        "quantity": 186
+        "symbol": "AMZN",
+        "quantity": 108
       }
     ]
   },
@@ -947,15 +947,15 @@
     "portfolio": [
       {
         "symbol": "DAL",
-        "quantity": 105
+        "quantity": 172
       },
       {
-        "symbol": "DIS",
-        "quantity": 146
+        "symbol": "AMZN",
+        "quantity": 178
       },
       {
-        "symbol": "GME",
-        "quantity": 182
+        "symbol": "IBM",
+        "quantity": 133
       }
     ]
   },
@@ -966,16 +966,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "DAL",
+        "quantity": 165
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 194
+      },
+      {
         "symbol": "GME",
-        "quantity": 167
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 111
-      },
-      {
-        "symbol": "AMZN",
-        "quantity": 122
+        "quantity": 156
       }
     ]
   },
@@ -986,16 +986,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 157
+        "symbol": "IBM",
+        "quantity": 138
+      },
+      {
+        "symbol": "GE",
+        "quantity": 154
       },
       {
         "symbol": "AMZN",
-        "quantity": 185
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 139
+        "quantity": 137
       }
     ]
   },
@@ -1006,16 +1006,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 134
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 117
+        "symbol": "DAL",
+        "quantity": 199
       },
       {
         "symbol": "GME",
-        "quantity": 147
+        "quantity": 194
+      },
+      {
+        "symbol": "DIS",
+        "quantity": 152
       }
     ]
   },
@@ -1026,16 +1026,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 187
+        "symbol": "GE",
+        "quantity": 125
       },
       {
-        "symbol": "AMZN",
-        "quantity": 165
+        "symbol": "GME",
+        "quantity": 175
       },
       {
-        "symbol": "GOOG",
-        "quantity": 106
+        "symbol": "DAL",
+        "quantity": 164
       }
     ]
   },
@@ -1046,16 +1046,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 154
+        "symbol": "IBM",
+        "quantity": 190
       },
       {
         "symbol": "DIS",
-        "quantity": 165
+        "quantity": 125
       },
       {
-        "symbol": "IBM",
-        "quantity": 193
+        "symbol": "DAL",
+        "quantity": 148
       }
     ]
   },
@@ -1066,16 +1066,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 147
-      },
-      {
         "symbol": "DAL",
-        "quantity": 121
+        "quantity": 149
       },
       {
-        "symbol": "GME",
-        "quantity": 169
+        "symbol": "AMZN",
+        "quantity": 175
+      },
+      {
+        "symbol": "GE",
+        "quantity": 148
       }
     ]
   },
@@ -1086,16 +1086,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 116
+        "symbol": "GOOG",
+        "quantity": 138
       },
       {
-        "symbol": "GME",
-        "quantity": 110
+        "symbol": "DIS",
+        "quantity": 168
       },
       {
-        "symbol": "GE",
-        "quantity": 142
+        "symbol": "AMZN",
+        "quantity": 180
       }
     ]
   },
@@ -1106,16 +1106,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 133
+        "symbol": "IBM",
+        "quantity": 140
       },
       {
-        "symbol": "DIS",
-        "quantity": 154
+        "symbol": "GME",
+        "quantity": 100
       },
       {
-        "symbol": "GOOG",
-        "quantity": 104
+        "symbol": "GE",
+        "quantity": 117
       }
     ]
   },
@@ -1126,16 +1126,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 108
-      },
-      {
-        "symbol": "GE",
-        "quantity": 150
-      },
-      {
         "symbol": "GME",
-        "quantity": 109
+        "quantity": 185
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 124
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 165
       }
     ]
   },
@@ -1147,15 +1147,15 @@
     "portfolio": [
       {
         "symbol": "IBM",
-        "quantity": 170
+        "quantity": 166
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 105
       },
       {
         "symbol": "GOOG",
-        "quantity": 180
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 198
+        "quantity": 127
       }
     ]
   },
@@ -1166,16 +1166,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 127
+        "symbol": "GE",
+        "quantity": 177
       },
       {
-        "symbol": "DIS",
-        "quantity": 193
+        "symbol": "DAL",
+        "quantity": 146
       },
       {
-        "symbol": "IBM",
-        "quantity": 149
+        "symbol": "GOOG",
+        "quantity": 107
       }
     ]
   },
@@ -1186,16 +1186,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 128
+        "symbol": "GME",
+        "quantity": 186
       },
       {
         "symbol": "DAL",
-        "quantity": 166
+        "quantity": 172
       },
       {
         "symbol": "DIS",
-        "quantity": 194
+        "quantity": 181
       }
     ]
   },
@@ -1206,16 +1206,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 199
+        "symbol": "GE",
+        "quantity": 109
       },
       {
-        "symbol": "AMZN",
-        "quantity": 103
+        "symbol": "DAL",
+        "quantity": 173
       },
       {
-        "symbol": "IBM",
-        "quantity": 184
+        "symbol": "GME",
+        "quantity": 194
       }
     ]
   },
@@ -1226,16 +1226,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 150
+        "symbol": "DAL",
+        "quantity": 134
       },
       {
-        "symbol": "GOOG",
-        "quantity": 144
+        "symbol": "GME",
+        "quantity": 140
       },
       {
         "symbol": "IBM",
-        "quantity": 191
+        "quantity": 149
       }
     ]
   },
@@ -1246,16 +1246,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 162
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 161
-      },
-      {
         "symbol": "IBM",
-        "quantity": 119
+        "quantity": 168
+      },
+      {
+        "symbol": "GME",
+        "quantity": 100
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 174
       }
     ]
   },
@@ -1266,16 +1266,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 170
+        "symbol": "IBM",
+        "quantity": 172
       },
       {
         "symbol": "DAL",
-        "quantity": 178
+        "quantity": 150
       },
       {
-        "symbol": "DIS",
-        "quantity": 134
+        "symbol": "GOOG",
+        "quantity": 117
       }
     ]
   },
@@ -1286,16 +1286,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 182
+        "symbol": "DIS",
+        "quantity": 146
       },
       {
-        "symbol": "GOOG",
-        "quantity": 101
+        "symbol": "IBM",
+        "quantity": 162
       },
       {
         "symbol": "GME",
-        "quantity": 159
+        "quantity": 167
       }
     ]
   },
@@ -1306,16 +1306,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 173
+        "symbol": "GOOG",
+        "quantity": 106
       },
       {
-        "symbol": "AMZN",
-        "quantity": 153
+        "symbol": "IBM",
+        "quantity": 185
       },
       {
-        "symbol": "DIS",
-        "quantity": 135
+        "symbol": "GE",
+        "quantity": 119
       }
     ]
   },
@@ -1326,16 +1326,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 110
+        "symbol": "DAL",
+        "quantity": 105
       },
       {
         "symbol": "GE",
-        "quantity": 123
+        "quantity": 105
       },
       {
-        "symbol": "DAL",
-        "quantity": 151
+        "symbol": "DIS",
+        "quantity": 157
       }
     ]
   },
@@ -1346,16 +1346,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 131
-      },
-      {
-        "symbol": "GME",
-        "quantity": 177
+        "symbol": "DIS",
+        "quantity": 142
       },
       {
         "symbol": "IBM",
-        "quantity": 124
+        "quantity": 163
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 155
       }
     ]
   },
@@ -1367,15 +1367,15 @@
     "portfolio": [
       {
         "symbol": "GOOG",
-        "quantity": 177
+        "quantity": 174
+      },
+      {
+        "symbol": "DIS",
+        "quantity": 113
       },
       {
         "symbol": "GE",
-        "quantity": 100
-      },
-      {
-        "symbol": "AMZN",
-        "quantity": 188
+        "quantity": 125
       }
     ]
   },
@@ -1386,16 +1386,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 113
+        "symbol": "DAL",
+        "quantity": 152
+      },
+      {
+        "symbol": "DIS",
+        "quantity": 131
       },
       {
         "symbol": "IBM",
-        "quantity": 100
-      },
-      {
-        "symbol": "GE",
-        "quantity": 169
+        "quantity": 148
       }
     ]
   },
@@ -1406,16 +1406,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 155
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 184
-      },
-      {
         "symbol": "GME",
-        "quantity": 137
+        "quantity": 117
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 101
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 130
       }
     ]
   },
@@ -1426,16 +1426,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 142
+        "symbol": "IBM",
+        "quantity": 181
       },
       {
-        "symbol": "DAL",
-        "quantity": 104
+        "symbol": "GOOG",
+        "quantity": 181
       },
       {
         "symbol": "GE",
-        "quantity": 177
+        "quantity": 174
       }
     ]
   },
@@ -1446,16 +1446,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 151
-      },
-      {
         "symbol": "DAL",
-        "quantity": 105
+        "quantity": 120
       },
       {
-        "symbol": "GE",
-        "quantity": 184
+        "symbol": "IBM",
+        "quantity": 136
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 108
       }
     ]
   },
@@ -1467,15 +1467,15 @@
     "portfolio": [
       {
         "symbol": "GE",
-        "quantity": 193
+        "quantity": 161
       },
       {
-        "symbol": "GME",
-        "quantity": 109
+        "symbol": "IBM",
+        "quantity": 124
       },
       {
         "symbol": "AMZN",
-        "quantity": 191
+        "quantity": 168
       }
     ]
   },
@@ -1486,16 +1486,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "GME",
+        "quantity": 139
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 163
+      },
+      {
         "symbol": "GE",
-        "quantity": 162
-      },
-      {
-        "symbol": "DAL",
-        "quantity": 109
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 171
+        "quantity": 191
       }
     ]
   },
@@ -1506,16 +1506,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 155
+        "symbol": "AMZN",
+        "quantity": 101
       },
       {
         "symbol": "DAL",
-        "quantity": 184
+        "quantity": 165
       },
       {
-        "symbol": "DIS",
-        "quantity": 183
+        "symbol": "IBM",
+        "quantity": 128
       }
     ]
   },
@@ -1526,16 +1526,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 197
+        "symbol": "GOOG",
+        "quantity": 122
       },
       {
         "symbol": "GE",
-        "quantity": 162
+        "quantity": 181
       },
       {
-        "symbol": "GOOG",
-        "quantity": 141
+        "symbol": "IBM",
+        "quantity": 159
       }
     ]
   },
@@ -1546,16 +1546,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 149
-      },
-      {
         "symbol": "GOOG",
-        "quantity": 156
+        "quantity": 134
       },
       {
-        "symbol": "GE",
-        "quantity": 107
+        "symbol": "DAL",
+        "quantity": 115
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 141
       }
     ]
   },
@@ -1566,16 +1566,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 162
+        "symbol": "GE",
+        "quantity": 179
       },
       {
-        "symbol": "DIS",
-        "quantity": 109
+        "symbol": "AMZN",
+        "quantity": 156
       },
       {
-        "symbol": "GME",
-        "quantity": 171
+        "symbol": "GOOG",
+        "quantity": 101
       }
     ]
   },
@@ -1587,15 +1587,15 @@
     "portfolio": [
       {
         "symbol": "DAL",
-        "quantity": 123
+        "quantity": 185
       },
       {
-        "symbol": "GE",
-        "quantity": 192
+        "symbol": "GME",
+        "quantity": 109
       },
       {
-        "symbol": "GOOG",
-        "quantity": 127
+        "symbol": "DIS",
+        "quantity": 174
       }
     ]
   },
@@ -1606,16 +1606,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 172
+        "symbol": "DIS",
+        "quantity": 124
+      },
+      {
+        "symbol": "GE",
+        "quantity": 192
       },
       {
         "symbol": "IBM",
-        "quantity": 109
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 113
+        "quantity": 156
       }
     ]
   },
@@ -1626,16 +1626,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 106
+        "symbol": "DIS",
+        "quantity": 163
       },
       {
-        "symbol": "GME",
-        "quantity": 100
+        "symbol": "DAL",
+        "quantity": 136
       },
       {
-        "symbol": "IBM",
-        "quantity": 152
+        "symbol": "GE",
+        "quantity": 170
       }
     ]
   },
@@ -1646,16 +1646,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 138
+        "symbol": "AMZN",
+        "quantity": 112
       },
       {
-        "symbol": "DAL",
+        "symbol": "DIS",
+        "quantity": 173
+      },
+      {
+        "symbol": "GME",
         "quantity": 154
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 186
       }
     ]
   },
@@ -1667,15 +1667,15 @@
     "portfolio": [
       {
         "symbol": "GME",
-        "quantity": 185
+        "quantity": 140
       },
       {
         "symbol": "DIS",
-        "quantity": 100
+        "quantity": 192
       },
       {
-        "symbol": "GOOG",
-        "quantity": 154
+        "symbol": "IBM",
+        "quantity": 108
       }
     ]
   },
@@ -1686,16 +1686,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 141
-      },
-      {
-        "symbol": "AMZN",
-        "quantity": 139
-      },
-      {
         "symbol": "IBM",
-        "quantity": 199
+        "quantity": 132
+      },
+      {
+        "symbol": "GE",
+        "quantity": 103
+      },
+      {
+        "symbol": "DIS",
+        "quantity": 183
       }
     ]
   },
@@ -1706,16 +1706,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 117
+        "symbol": "AMZN",
+        "quantity": 198
       },
       {
-        "symbol": "GME",
-        "quantity": 171
+        "symbol": "GOOG",
+        "quantity": 103
       },
       {
-        "symbol": "DIS",
-        "quantity": 149
+        "symbol": "GE",
+        "quantity": 154
       }
     ]
   },
@@ -1727,15 +1727,15 @@
     "portfolio": [
       {
         "symbol": "GE",
-        "quantity": 115
+        "quantity": 146
       },
       {
-        "symbol": "GOOG",
-        "quantity": 147
+        "symbol": "DAL",
+        "quantity": 102
       },
       {
-        "symbol": "AMZN",
-        "quantity": 119
+        "symbol": "IBM",
+        "quantity": 124
       }
     ]
   },
@@ -1746,16 +1746,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 184
+        "symbol": "AMZN",
+        "quantity": 125
+      },
+      {
+        "symbol": "IBM",
+        "quantity": 101
       },
       {
         "symbol": "GME",
-        "quantity": 165
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 185
+        "quantity": 104
       }
     ]
   },
@@ -1766,16 +1766,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 186
-      },
-      {
-        "symbol": "GME",
-        "quantity": 197
-      },
-      {
         "symbol": "DIS",
-        "quantity": 153
+        "quantity": 115
+      },
+      {
+        "symbol": "GE",
+        "quantity": 177
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 108
       }
     ]
   },
@@ -1786,16 +1786,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 155
+        "symbol": "GME",
+        "quantity": 164
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 181
       },
       {
         "symbol": "GOOG",
-        "quantity": 107
-      },
-      {
-        "symbol": "AMZN",
-        "quantity": 117
+        "quantity": 170
       }
     ]
   },
@@ -1806,16 +1806,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 154
-      },
-      {
         "symbol": "GE",
-        "quantity": 189
+        "quantity": 120
       },
       {
-        "symbol": "GME",
-        "quantity": 172
+        "symbol": "IBM",
+        "quantity": 160
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 149
       }
     ]
   },
@@ -1826,16 +1826,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 156
+        "symbol": "GOOG",
+        "quantity": 195
       },
       {
         "symbol": "GE",
-        "quantity": 180
+        "quantity": 113
       },
       {
         "symbol": "AMZN",
-        "quantity": 104
+        "quantity": 171
       }
     ]
   },
@@ -1846,16 +1846,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
+        "symbol": "IBM",
+        "quantity": 180
+      },
+      {
         "symbol": "DAL",
-        "quantity": 138
+        "quantity": 154
       },
       {
-        "symbol": "DIS",
-        "quantity": 151
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 193
+        "symbol": "GE",
+        "quantity": 120
       }
     ]
   },
@@ -1866,16 +1866,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GE",
-        "quantity": 181
+        "symbol": "DAL",
+        "quantity": 188
       },
       {
         "symbol": "IBM",
-        "quantity": 174
+        "quantity": 115
       },
       {
-        "symbol": "AMZN",
-        "quantity": 176
+        "symbol": "GME",
+        "quantity": 117
       }
     ]
   },
@@ -1886,16 +1886,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DAL",
-        "quantity": 148
-      },
-      {
-        "symbol": "DIS",
-        "quantity": 113
+        "symbol": "AMZN",
+        "quantity": 118
       },
       {
         "symbol": "IBM",
-        "quantity": 147
+        "quantity": 111
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 156
       }
     ]
   },
@@ -1906,16 +1906,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GOOG",
-        "quantity": 151
+        "symbol": "GME",
+        "quantity": 145
+      },
+      {
+        "symbol": "AMZN",
+        "quantity": 197
       },
       {
         "symbol": "DIS",
-        "quantity": 189
-      },
-      {
-        "symbol": "GE",
-        "quantity": 167
+        "quantity": 161
       }
     ]
   },
@@ -1926,16 +1926,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "GME",
-        "quantity": 159
+        "symbol": "DIS",
+        "quantity": 167
       },
       {
         "symbol": "AMZN",
-        "quantity": 115
+        "quantity": 100
       },
       {
-        "symbol": "DIS",
-        "quantity": 110
+        "symbol": "GE",
+        "quantity": 103
       }
     ]
   },
@@ -1946,16 +1946,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "AMZN",
-        "quantity": 146
+        "symbol": "GE",
+        "quantity": 122
+      },
+      {
+        "symbol": "GOOG",
+        "quantity": 110
       },
       {
         "symbol": "GME",
-        "quantity": 195
-      },
-      {
-        "symbol": "IBM",
-        "quantity": 194
+        "quantity": 175
       }
     ]
   },
@@ -1966,16 +1966,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "DIS",
-        "quantity": 192
+        "symbol": "GOOG",
+        "quantity": 101
       },
       {
         "symbol": "DAL",
-        "quantity": 164
+        "quantity": 198
       },
       {
-        "symbol": "IBM",
-        "quantity": 153
+        "symbol": "AMZN",
+        "quantity": 147
       }
     ]
   },
@@ -1986,16 +1986,16 @@
     "entity_type": "portfolio",
     "portfolio": [
       {
-        "symbol": "IBM",
-        "quantity": 151
+        "symbol": "GE",
+        "quantity": 193
+      },
+      {
+        "symbol": "DAL",
+        "quantity": 124
       },
       {
         "symbol": "AMZN",
-        "quantity": 187
-      },
-      {
-        "symbol": "GOOG",
-        "quantity": 113
+        "quantity": 117
       }
     ]
   }
