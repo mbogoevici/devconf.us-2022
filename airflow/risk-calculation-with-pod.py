@@ -53,7 +53,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         chunks = []
         n = 10
         for i in range (0, n):
-            chunks[i] = []
+            chunks.append([])
         for index, item in data:
             chunks[index % n].append(data)
         chunks = list(partition(data, 10, order='correlationID'))
