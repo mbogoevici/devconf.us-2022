@@ -44,22 +44,13 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
             HttpHook(method='PUT', http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(ticker),
                                                    data=s3_hook.read_key(key, bucket_name='risk-calc'))
 
-    
+
     @task
     def extract_portfolios():
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
-        chunks = []
-        n = 10
-        for i in range (0, 20):
-            chunks.append([])
-        for index, item in enumerate(data):
-            chunks[index % n].append(data)
-        chunk_data = []
-        for chunk in chunks:
-            chunk_data.append(list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(chunk))}, data)))
-        return chunk_data
+        return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
 
     PodDefaults.SIDECAR_CONTAINER.image = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
     calculate_var = KubernetesPodOperator.partial(
