@@ -18,7 +18,7 @@ from airflow.providers.http.hooks.http import HttpHook;
 from airflow.providers.http.operators.http import SimpleHttpOperator
 
 
-with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022, 2, 12), catchup = False, concurrency=100) as dag:
+with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022, 2, 12), catchup = False, concurrency=100, max_active_tasks = 100) as dag:
 
     def remove_suffix(input_string, suffix):
         if suffix and input_string.endswith(suffix):
