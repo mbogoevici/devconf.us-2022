@@ -15,7 +15,7 @@ from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import Kubernete
 from airflow.operators.python import PythonOperator
 from airflow.providers.cncf.kubernetes.utils.xcom_sidecar import PodDefaults
 from airflow.providers.http.hooks.http import HttpHook;
-
+from numpy import partition
 
 with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup = False, concurrency=10) as dag:
 
@@ -50,7 +50,11 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
-        return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
+        chunks = list(partition(data, 10))
+        chunk_data = []
+        for chunk in chunks:
+            chunk_data.append((map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(chunk))}, data)))
+        return chunks
 
     PodDefaults.SIDECAR_CONTAINER.image = "image-registry.openshift-image-registry.svc:5000/airflow/alpine:latest"
     calculate_var = KubernetesPodOperator.partial(
@@ -87,6 +91,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     def _write_results_to_S3(**kwargs):
         ti = kwargs['ti']
         results = ti.xcom_pull(key='return_value', task_ids=['calculate_var'])
+        results_flat = sum(results, [])
         s3_hook = S3Hook(aws_conn_id='s3')
         s3_hook.load_string(json.dumps(results, indent=2), bucket_name= 'risk-calc',
                             key="results/value-at-risk-{}-{}.json".format(str(datetime.utcnow()).split()[0],str(datetime.utcnow()).split()[1]))
