@@ -38,32 +38,46 @@ def value_at_risk():
 
 
 def calculate_value_at_risk(request_data):
-    portfolio = Portfolio()
-    for position in request_data.get("portfolio"):
-        portfolio.addPosition(position["symbol"], position["quantity"])
-    confidence = request_data.get("confidence", 0.99)
-    correlation_id = request_data.get("correlationID", "")
-    entity_type = request_data.get("entity_type", "")
-    entity_id = request_data.get("entity_id", "")
-    # Fetch closing price for each symbol for the last year
-    #   N.B. - Comment/uncomment appropriate MarketData init depending on if you are running a cache
-    start = datetime.date.today() - datetime.timedelta(days=365)
-    end = datetime.date.today()
-    market_data = MarketData()
-    # print("CALLING MARKET DATA GET")
-    hist_prices = market_data.get(portfolio.symbols(), start, end)
-    # Calculate value at risk
-    var = ValueAtRisk()
-    with metric_risk_calc_pref_seconds.labels('VaR').time():
-        results = var.calculate(portfolio, hist_prices, confidence)
-    # Entity value at risk
-    metric_risk_entity_var.labels(entity_type, entity_id, confidence).set(results)
-    metric_risk_app.labels("/value-at-risk", "GET", 200).inc()
-    # Return VaR
-    data = {"correlationID": correlation_id, "entity_type": entity_type, "entity_id": entity_id,
-            "confidence": confidence, "valueAtRisk": results,
-            "valueAtRiskAsOf": int(datetime.datetime.utcnow().timestamp() * 1000)}
-    return data
+    if (isinstance(request_data, list)) :
+        requests = request_data
+    else:
+        requests = [request_data]
+
+    results = []
+
+    for request in requests:
+        portfolio = Portfolio();
+
+        for position in request.get("portfolio"):
+            portfolio.addPosition(position["symbol"], position["quantity"])
+            confidence = request.get("confidence", 0.99)
+            correlation_id = request.get("correlationID", "")
+            entity_type = request.get("entity_type", "")
+            entity_id = request.get("entity_id", "")
+            # Fetch closing price for each symbol for the last year
+            #   N.B. - Comment/uncomment appropriate MarketData init depending on if you are running a cache
+            start = datetime.date.today() - datetime.timedelta(days=365)
+            end = datetime.date.today()
+            market_data = MarketData()
+            # print("CALLING MARKET DATA GET")
+            hist_prices = market_data.get(portfolio.symbols(), start, end)
+            # Calculate value at risk
+            var = ValueAtRisk()
+            with metric_risk_calc_pref_seconds.labels('VaR').time():
+                results = var.calculate(portfolio, hist_prices, confidence)
+            # Entity value at risk
+            metric_risk_entity_var.labels(entity_type, entity_id, confidence).set(results)
+            metric_risk_app.labels("/value-at-risk", "GET", 200).inc()
+            # Return VaR
+            value_at_risk = {"correlationID": correlation_id, "entity_type": entity_type, "entity_id": entity_id,
+                    "confidence": confidence, "valueAtRisk": results,
+                    "valueAtRiskAsOf": int(datetime.datetime.utcnow().timestamp() * 1000)}
+            results.add(value_at_risk)
+
+    if isinstance(request_data, list):
+        return results
+    else:
+        return results[0]
 
 
 # Crash test endpoint.  Useful to confirm error logging if working.
