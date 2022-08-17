@@ -50,7 +50,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
         s3_hook = S3Hook(aws_conn_id='s3')
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
-        chunks = list(partition(data, 10))
+        chunks = list(partition(data, 10, order='correlationID'))
         chunk_data = []
         for chunk in chunks:
             chunk_data.append((map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(chunk))}, data)))
