@@ -10,6 +10,7 @@ from airflow import DAG
 from airflow.configuration import conf
 from airflow.decorators import task
 from airflow.example_dags.libs.helper import print_stuff
+from airflow.models import Param
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
 from airflow.operators.python import PythonOperator
@@ -17,7 +18,10 @@ from airflow.providers.cncf.kubernetes.utils.xcom_sidecar import PodDefaults
 from airflow.providers.http.hooks.http import HttpHook;
 
 with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 2, 12), catchup=False,
-         concurrency=10) as dag:
+        params= {
+        "input_file": Param('portfolios.json', type="string", minimum=6)
+        },
+        concurrency=10) as dag:
     def remove_suffix(input_string, suffix):
         if suffix and input_string.endswith(suffix):
             return input_string[:-len(suffix)]
@@ -50,6 +54,7 @@ with DAG(dag_id="risk_calculation-with-pod", start_date=pendulum.datetime(2022, 
     @task
     def extract_portfolios():
         s3_hook = S3Hook(aws_conn_id='s3')
+        file_name = "{{ params.input_file }}"
         file = s3_hook.read_key('portfolios.json', 'risk-calc')
         data = json.loads(file)
         return list(map(lambda p: {'PORTFOLIO_DATA': "{}".format(json.dumps(p))}, data))
