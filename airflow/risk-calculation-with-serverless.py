@@ -43,7 +43,7 @@ with DAG(dag_id="risk_calculation-serverless", start_date=pendulum.datetime(2022
             print(key)
             ticker = remove_prefix(remove_suffix(key, ".json"), 'market-data/')
             print(ticker)
-            HttpHook(method='PUT', http_conn_id='hazelcast').run(endpoint='rest/v2/caches/market-data/{}'.format(ticker),
+            HttpHook(method='PUT', http_conn_id='data-grid').run(endpoint='rest/v2/caches/market-data/{}'.format(ticker),
                                                    data=s3_hook.read_key(key, bucket_name='risk-calc'))
 
     
