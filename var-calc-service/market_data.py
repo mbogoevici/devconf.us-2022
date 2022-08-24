@@ -27,7 +27,7 @@ class MarketData:
     # Return a dataframe of daily closing prices
     def get(self, symbols, start, end):
         #print("ENTER GET MARKET DATA")
-        _datagrid_url = "http://risk-calc-cache.infinispan.svc.cluster.local:11222/rest/v2/caches/market-data"
+        _datagrid_url = "http://risk-calc-cache.data-grid.svc.cluster.local:11222/rest/v2/caches/market-data"
         _cache_user = "testuser"
         _cache_pass = "testpassword"
 
